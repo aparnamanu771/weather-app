@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./weather.css">
+</head>
+<body>
+
+        <video autoplay muted loop id="myVideo">
+          <source src="./vedio/CLODs.mp4" type="video/mp4">
+          
+        </video>
+        
+        <div class="content"> 
+            <div class=" container w-50 p-5 text-center ">
+        
+        <input id="locate" type="text" class="form-control p-2 mt-4 mb-3" placeholder="Enter the location">
+        <button type="button" onclick="search()" class="btn btn-outline-light">Search</button>
+    </div>
+<div class="text-center">
+    <h1>Weather Info</h1>
+</div>
+    <div id="result" class="container form-control text-center  w-50 mt-2 p-5">
+        
+
+    </div>
+         
+        </div>
+        
+        </head>
+       
+        
+
+</body>
+<script>
+    function search(){
+
+        location=locate.value
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=5b4bee0ba241d092159faf007e166080`).then(data=>data.json())
+        .then(data=>displayData(data))
+
+    }
+
+    function displayData(locationDetails){
+        location=locationDetails[0].name
+        weather=locationDetails[0].weather[0]
+        description=weather[0].description
+        temp=locationDetails[0]. main[0].temp
+        feels_like=locationDetails[0].main[0].feels_like
+        clouds=locationDetails[0]
+        sunrise=locationDetails[0].sys[0].sunrise
+        sunset=locationDetails[0].sys[0].sunset
+        result.innerHTML= `
+         description= ${description}
+        `
+
+        
+    }
+
+
+</script>
+
+</html>

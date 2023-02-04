@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Yeseva+One&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Amita&family=Bad+Script&family=Berkshire+Swash&family=Creepster&family=Darker+Grotesque&family=Libre+Baskerville&family=Lobster&family=Marck+Script&family=Merriweather:ital,wght@1,300&family=Mukta&family=Oswald:wght@300&family=Poppins:ital,wght@0,400;1,200&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Rubik+Glitch&family=Staatliches&display=swap');
+
+
+/* video {
+    width: 100%;
+    height: auto;
+  } */
+
+  body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+    font-family: 'Yeseva One', cursive;
+  
+  }
+  
+  #myVedio {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+  .content {
+    position: fixed;
+    bottom: 0;
+    /* background: rgba(177, 152, 152, 0.5); */
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-image: url(./imgs/nature-forest-landscape-night-scene_1308-58313.webp);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+  /* #result{
+   
+    
+  } */
+
+  .container{
+    max-width: 700px;
+  }
+
+
+  #result .list-group {
+    background-color: rgba(0, 0, 0, 0.5);
+    color:#ffffff;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+
+  #result .list-group img{
+    max-width: 30px;
+
+  }
+
+  .forcast{
+    margin-top: 20px;
+  }
+
+ /* .content .list-group h1{ */
+/* color: #fff  */
+  /* } */
