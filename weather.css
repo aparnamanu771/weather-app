@@ -32,7 +32,7 @@
     color: #ffffff;
     width: 100%;
     height: 100%;
-    padding-top: 300px;
+    padding: 10px;
     background-image: url(./imgs/nature-forest-landscape-night-scene_1308-58313.webp);
     background-repeat: no-repeat;
     background-position: center top;
@@ -62,13 +62,6 @@
 
   .forcast{
     margin-top: 20px;
-  }
-  h1{
-    padding-top: 60px;
-  }
-
-  .list-group{
-    padding-bottom: 80px;
   }
 
  /* .content .list-group h1{ */
